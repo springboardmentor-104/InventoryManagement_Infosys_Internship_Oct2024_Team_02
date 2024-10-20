@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to handle OTP form submission
+        async function verifyOTP(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const otp = document.getElementById('otp').value;
+            const response = await fetch('/verify-otp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ otp })
+            });
+
+            const data = await response.json();
+            const message = document.getElementById('message');
+            if (data.success) {
+                alert(data.message);
+                window.location.href = data.redirect; // Redirect to login page on success
+            } else {
+                message.textContent = data.message; // Display error message
+                message.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <div class="form-container">
+                <h1>Verify OTP</h1>
+                <form id="otpForm" onsubmit="verifyOTP(event)">
+                    <div id="message"></div> <!-- Error message placeholder -->
+                    
+                    <label for="otp">OTP</label>
+                    <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required>
+                    
+                    <button type="submit">Verify OTP</button>
+                    <p>Didn't receive an OTP? <a href="register.html">Register again</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
