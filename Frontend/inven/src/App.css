@@ -1,0 +1,43 @@
+/* Initially hidden overlay */
+[data-overlay] {
+  display: none;
+  /* Additional overlay styles */
+}
+
+[data-overlay].active {
+  display: block;
+  /* Show overlay with styles */
+}
+
+/* Navbar initially hidden for mobile */
+[data-navbar] {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+[data-navbar].active {
+  transform: translateX(0);
+}
+
+/* Sticky header on scroll */
+[data-header] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Default styles */
+}
+
+[data-header].active {
+  background-color: rgba(255, 255, 255, 0.8); /* Change color on scroll */
+}
+
+/* Back to top button */
+[data-back-top-btn] {
+  display: none;
+  /* Styling */
+}
+
+[data-back-top-btn].active {
+  display: block;
+  /* Show button */
+}
