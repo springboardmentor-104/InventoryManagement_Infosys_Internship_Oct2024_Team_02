@@ -50,8 +50,8 @@ function SignUpPage() {
               value={role}
               onChange={(e) => setRole(e.target.value)}>
               <option value="" >Select Role</option>
-              <option value="admin">Admin</option>
-              <option value="customer">Customer</option>
+              <option value="Admin">Admin</option>
+              <option value="Customer">Customer</option>
             </select>
             <input
               type="email"
