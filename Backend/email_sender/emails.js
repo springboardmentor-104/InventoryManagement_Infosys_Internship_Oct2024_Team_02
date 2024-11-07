@@ -6,13 +6,13 @@ export const sendVerificationEmail = async (email, verificationToken) => {
 	const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'shucsarkar@gmail.com', 
+            user: 'shuctikasarkar6@gmail.com', 
             pass: process.env.PASS,     //app pass    
         },
     });
 
     const mailOptions = {
-        from: 'shucsarkar@gmail.com',
+        from: 'shuctikasarkar6@gmail.com',
         to: email,
         subject: "Verify your email",
         text: `OTP for Email Verification is`,
