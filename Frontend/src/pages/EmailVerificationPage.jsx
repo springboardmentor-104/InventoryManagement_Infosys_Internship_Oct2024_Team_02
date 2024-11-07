@@ -66,9 +66,9 @@ function EmailVerificationPage() {
   return (
     
 	<div className='min-h-screen bg-gradient-to-br
-    from-sky-200 via-blue-300 to-sky-200 flex items-center justify-center relative overflow-hidden'>
-      <div className='max-w-xl w-full bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-xl overflow-hidden'>
-        <div className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-xl rounded-2xl shadow-2xl p-8 w-full max-w-xl'>
+    from-gray-300 to-gray-300 flex items-center justify-center relative overflow-hidden'>
+      <div className='max-w-2xl py-6 px-4 w-full bg-gray-800  rounded-2xl shadow-xl overflow-hidden'>
+        <div className='bg-gray-800  rounded-2xl shadow-2xl p-9 w-full max-w-2xl'>
         <h2 className='text-4xl font-bold mb-6 text-center bg-gradient-to-r from-sky-400 to-blue-500 text-transparent bg-clip-text'>
 					Verify Your Email
 				</h2>
@@ -93,7 +93,7 @@ function EmailVerificationPage() {
 						
 						type='submit'
 						
-						className='w-full text-2xl bg-gradient-to-r from-sky-400 to-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg hover:from-sky-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 disabled:opacity-50'
+						className='w-full py-5 text-2xl bg-gradient-to-r from-sky-400 to-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg hover:from-sky-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 disabled:opacity-50'
 					>
 						Verify Email
 					</button>

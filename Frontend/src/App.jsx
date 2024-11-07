@@ -18,6 +18,9 @@ import Sidebar from './Componeents/Sidebar'
 import HomePage from './Customer_Pages/HomePage';
 import Orders from './Customer_Pages/Orders';
 
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ResetPasswordPage from './pages/ResetPasswordPage';
+
 
 
 // protect routes
@@ -72,6 +75,8 @@ console.log("user",user);
         <Route path="/signup" element={<RedirectedAuthenticatedUser><SignUpPage/></RedirectedAuthenticatedUser>} />
         <Route path="/login" element={<RedirectedAuthenticatedUser><LoginPage/></RedirectedAuthenticatedUser>} />
         <Route path="/verify-email" element={<EmailVerificationPage/>} />
+        <Route path="/forgot-password" element={<RedirectedAuthenticatedUser><ForgotPasswordPage/></RedirectedAuthenticatedUser>} />
+        <Route path="/reset-password/:token" element={<RedirectedAuthenticatedUser><ResetPasswordPage/></RedirectedAuthenticatedUser>} />
 
        
         <Route path="/customer/*" element={<CustomerPage/>} />
