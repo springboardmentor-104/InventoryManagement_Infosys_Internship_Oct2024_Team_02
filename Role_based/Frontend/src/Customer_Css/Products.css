@@ -1,0 +1,101 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  max-width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-details h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #777;
+}
+
+.addbutton {
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  transition: background-color 0.2s;
+}
+.wishbutton{
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  width:100%;
+  transition: background-color 0.2s;
+}
+
+.addbutton:first-of-type {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.addbutton:first-of-type:hover {
+  background-color: #ff4c4c;
+}
+
+.wishbutton:last-of-type {
+  background-color: #117015;
+  color: #fff;
+}
+
+.wishbutton:last-of-type:hover {
+  background-color: #15851a;
+}
+
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}

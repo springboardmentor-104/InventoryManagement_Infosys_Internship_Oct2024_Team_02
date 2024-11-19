@@ -1,0 +1,41 @@
+.wishlist {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.wishlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wishlist li {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wishlist li p {
+  margin: 0;
+  color: #555;
+  font-size: 1.2em;
+}
+
+.wishlist p {
+  font-size: 1.2em;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
