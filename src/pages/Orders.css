@@ -1,0 +1,139 @@
+.orders {
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.orders h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.empty-orders {
+  text-align: center;
+  font-size: 18px;
+  color: #95a5a6;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-item-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.order-item-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.order-item-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #16a085;
+}
+
+.order-item-details {
+  font-size: 13px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.order-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 5px 0;
+  color: #34495e;
+}
+
+.order-item-info-label {
+  font-weight: 500;
+}
+
+.order-item-info-value {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.order-summary {
+  width: 100%;
+  max-width: 760px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #eaf2f8;
+  border: 1px solid #b0c6db;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: right;
+}
+
+.order-summary h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.summary-total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2980b9;
+}
+
+.summary-total span {
+  font-weight: 800;
+  color: #1abc9c;
+}
+
+
+@media (max-width: 768px) {
+  .orders {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .order-item-card {
+    padding: 12px;
+  }
+
+  .order-summary {
+    padding: 12px;
+  }
+
+  .orders-container {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,196 @@
+.order-placed-message {
+  max-width: 400px; 
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  color: #080808;
+  background-color: #4caf50;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+  .cart {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  .cart-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-items {
+    width: 65%;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .item-details h2 {
+    font-weight: bold;
+  }
+  
+  .item-details-info {
+    font-size: 0.9em;
+    color: orange;
+  }
+  
+  .item-price, .item-total {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quantity-selector button {
+    padding: 5px;
+    margin: 0 5px;
+  }
+  
+  .cart-summary {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .cart-summary h2 {
+    margin-bottom: 15px;
+  }
+  
+  .checkout-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .order-placed-message {
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .remove-button {
+    background: none;
+    color: red;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  
+  
+
+  
+
+
+  .checkout-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .checkout-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .checkout-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .checkout-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .checkout-input,
+  .checkout-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .checkout-input::placeholder,
+  .checkout-textarea::placeholder {
+    color: #aaaaaa;
+  }
+  
+  .checkout-textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .confirm-button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+
+  .order-placed-message {
+    margin: 20px auto;
+    padding: 15px 20px;
+    text-align: center;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 400px;
+  }
+  
